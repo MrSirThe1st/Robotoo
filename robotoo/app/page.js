@@ -12,13 +12,25 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Hero/>
-      <Stat/>
-      <Showcase/>
-      <Pricing/>
-      <Faq/>
-      <CallToAction/>
-      <Footer/>
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="stat">
+        <Stat />
+      </section>
+      <section id="showcase">
+        <Showcase />
+      </section>
+      <section id="pricing">
+        <Pricing />
+      </section>
+      <section id="faq">
+        <Faq />
+      </section>
+      <section id="cta">
+        <CallToAction />
+      </section>
+      <Footer />
     </div>
   );
 }

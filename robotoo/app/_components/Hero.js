@@ -15,9 +15,8 @@ function Hero() {
             </h1>
 
             <p className="mt-4 sm:text-xl/relaxed">
-              We deliver personalized fonts and color recommendations,
-              transforming your brand identity effortlessly based on your business's unique
-              traits.
+              We deliver personalized fonts and color recommendations, based on
+              your business's unique traits and identity
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">

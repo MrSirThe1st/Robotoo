@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -17,37 +18,27 @@ function Header() {
                   <li>
                     <a
                       className="text-gray-500 transition hover:text-gray-500/75"
-                      href="#"
-                    >
-                      {" "}
-                      Home{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-500 transition hover:text-gray-500/75"
-                      href="#"
+                      href="#pricing"
                     >
                       {" "}
                       Pricing{" "}
                     </a>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <a
                       className="text-gray-500 transition hover:text-gray-500/75"
-                      href="#"
+                      href="/dashboard"
                     >
                       {" "}
                       Dashboard{" "}
                     </a>
-                  </li>
+                  </li> */}
 
                   <li>
                     <a
                       className="text-gray-500 transition hover:text-gray-500/75"
-                      href="#"
+                      href="#faq"
                     >
                       {" "}
                       FAQ{" "}
@@ -60,16 +51,16 @@ function Header() {
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow"
-                  href="#"
+                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary"
+                  href="sign-in"
                 >
                   Login
                 </a>
 
                 <div className="hidden sm:flex">
                   <a
-                    className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary"
-                    href="#"
+                    className="rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white shadow"
+                    href="/dashboard"
                   >
                     Get Started
                   </a>
