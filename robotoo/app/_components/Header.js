@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   return (
@@ -8,9 +9,7 @@ function Header() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <a className="block text-primary " href="#">
-                <p className="mt-4 sm:text-xl/relaxed">Robotoo</p>
-              </a>
+              <Image src="/logo.svg" width={130} height={130} />
             </div>
             <div className="hidden md:block">
               <nav aria-label="Global">
@@ -25,7 +24,7 @@ function Header() {
                     </a>
                   </li>
 
-                  {/* <li>
+                  <li>
                     <a
                       className="text-gray-500 transition hover:text-gray-500/75"
                       href="/dashboard"
@@ -33,7 +32,7 @@ function Header() {
                       {" "}
                       Dashboard{" "}
                     </a>
-                  </li> */}
+                  </li>
 
                   <li>
                     <a
@@ -50,12 +49,12 @@ function Header() {
 
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
-                <a
+                {/* <a
                   className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary"
-                  href="sign-in"
+                  href="/sign-in"
                 >
                   Login
-                </a>
+                </a> */}
 
                 <div className="hidden sm:flex">
                   <a
