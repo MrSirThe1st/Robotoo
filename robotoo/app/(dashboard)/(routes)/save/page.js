@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import TemplatesPage from "./_components/TemplatesPage";
 
 function page() {
   return (
-    <div>page</div>
-  )
+    <div>
+      <TemplatesPage />
+    </div>
+  );
 }
 
-export default page
+export default page;

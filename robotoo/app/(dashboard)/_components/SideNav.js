@@ -1,6 +1,8 @@
+"use client";
 import { File, Save } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Link from "next/link";
 
 function SideNav() {
   const menuList = [
@@ -17,20 +19,28 @@ function SideNav() {
       path: "/save",
     },
   ];
+
+  const [activeIndex, setActiveIndex] = useState();
+
   return (
-    <div>
-      <div className="p-5 border-b">
-        <Image src="logo.svg" width={130} height={130} />
+    <div className="shadow-sm border-r h-full">
+      <div className="p-5 ">
+        {/* Adjust the src attribute to point to your logo image */}
+        <Image src="/logo.svg" width={130} height={130} />
       </div>
       <div className="flex flex-col float-left w-full">
         {menuList.map((item, index) => (
-          <button
-            key={item.id}
-            className="flex gap-2 p-4 px-6 hover:bg-gray-100 w-full text-gray-500"
-          >
-            <item.icon />
-            <h2>{item.name}</h2>
-          </button>
+          <Link key={item.id} href={item.path}>
+            <button
+              className={`flex gap-2 p-4 px-6 hover:bg-gray-100  w-full text-gray-500 py-2 ${
+                activeIndex === index ? " bg-blue-500 text-white" : ""
+              }`}
+              onClick={() => setActiveIndex(index)}
+            >
+              <item.icon />
+              <h2>{item.name}</h2>
+            </button>
+          </Link>
         ))}
       </div>
     </div>

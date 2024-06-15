@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
     "@clerk/nextjs": "^4.29.10",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "firebase": "^10.12.2",
+    "framer-motion": "^11.2.10",
     "lucide-react": "^0.364.0",
     "next": "14.1.4",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18"
   },
